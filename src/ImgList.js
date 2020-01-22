@@ -11,19 +11,18 @@ export default function ImgList() {
         "https://api.nasa.gov/planetary/apod?api_key=dTcRd4gct9hDzV1UoBJJhSB7Nh9jjz1bXZi8bFKR"
       )
       .then(res => {
-        console.log(res)
+        console.log(res);
       })
       .catch(error => {
         console.log("An Error has occurred", error);
       });
   }, []);
 
-  return <div className="Image">
-    {image.map(Data => {
-      return(
-        <ImgCard copyright={Data.copyright} />
-      )
-
-    })}
-  </div>;
+  return (
+    <div className="Image">
+      {image.map(info => {
+        return <ImgCard copyright={info.copyright} date={info.date} />;
+      })}
+    </div>
+  );
 }

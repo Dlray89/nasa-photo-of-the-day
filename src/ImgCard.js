@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from "react";
-import ImgList from "./ImgList";
 
-const imageCard = props => {
-  return (
-    <div className="Cards">
-      <h2>Photo to the day</h2>
-      <p>{props.copyright}</p>
-    </div>
-  );
+const pictureCard = props => {
+
+
+
+
+  return <div className="mainImg">
+     <h2> copyright {props.copyright}</h2>
+     <p> Date: {props.date}</p>
+
+  </div>
+   
 };
 
-export default imageCard;
+export default pictureCard;

@@ -6,8 +6,13 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <ImgCard />
-      <Imglist />
+       <div className="cardHolder">
+         <img className="image" src="#" alt="#" />
+         <h1>Welcome to Nasa</h1>
+         <ImgCard />
+         <Imglist/>
+       </div>
+
     </div>
   );
 }
