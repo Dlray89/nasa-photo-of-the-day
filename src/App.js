@@ -1,15 +1,22 @@
 import React from "react";
-import "./App.css";
+import PhotoDetails from "./PhotoDetails";
 
-function App() {
-  return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
-    </div>
-  );
+
+const  App = () => {
+
+return(
+  <div className="app"> 
+  <form className="search-form">
+    <input className="Search-Bar" type="text" />
+    <button className="search-button" type="submit">Search</button>
+  </form>
+  <PhotoDetails />
+ 
+  </div>
+
+)
 }
 
-export default App;
+
+
+export default App
