@@ -1,20 +1,22 @@
 import React from "react";
-import ImgCard from "./ImgCard";
-import Imglist from "./ImgList";
-import "./App.css";
+import PhotoDetails from "./PhotoDetails";
 
-function App() {
-  return (
-    <div className="App">
-       <div className="cardHolder">
-         <img className="image" src="#" alt="#" />
-         <h1>Welcome to Nasa</h1>
-         <ImgCard />
-         <Imglist/>
-       </div>
 
-    </div>
-  );
+const  App = () => {
+
+return(
+  <div className="app"> 
+  <form className="search-form">
+    <input className="Search-Bar" type="text" />
+    <button className="search-button" type="submit">Search</button>
+  </form>
+  <PhotoDetails />
+ 
+  </div>
+
+)
 }
 
-export default App;
+
+
+export default App
